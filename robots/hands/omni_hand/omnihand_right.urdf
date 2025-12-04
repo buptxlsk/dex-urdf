@@ -147,8 +147,7 @@
     <child link="R_thumb_pip"/>
     <axis xyz="1 0 0"/>
     <limit effort="1.764" lower="0" upper="1.1344640137963142" velocity="0.308"/>
-    <mimic joint="R_thumb_mcp_joint" multiplier="0.5" offset="0"/>
-    <!-- <mimic joint="R_thumb_mcp_joint" multiplier="1.33" offset="0"/> -->
+    <mimic joint="R_thumb_mcp_joint" multiplier="1.33" offset="0"/>
   </joint>
   <link name="R_thumb_pip">
     <visual>
@@ -176,8 +175,7 @@
     <child link="R_thumb_dip"/>
     <axis xyz="1 0 0"/>
     <limit effort="1.764" lower="0" upper="1.1344640137963142" velocity="0.308"/>
-    <mimic joint="R_thumb_mcp_joint" multiplier="0.5" offset="0"/>
-    <!-- <mimic joint="R_thumb_mcp_joint" multiplier="1.3" offset="0"/> -->
+    <mimic joint="R_thumb_mcp_joint" multiplier="1.3" offset="0"/>
   </joint>
   <link name="R_thumb_dip">
     <visual>
@@ -235,14 +233,13 @@
       <inertia ixx="6.74e-06" ixy="0.0" ixz="-3.3e-07" iyy="7.81e-06" iyz="0.0" izz="2.37e-06"/>
     </inertial>
   </link>
-  
-        y 
   <joint name="R_index_pip_joint" type="revolute">
     <origin rpy="0 0 0" xyz="0.001025 0 0.017575"/>
     <parent link="R_index_abad"/>
     <child link="R_index_pip"/>
     <axis xyz="0 1 0"/>
-    <limit effort="1.764" lower="0" upper="1.5707963267948966" velocity="0.308"/>
+    <!-- <limit effort="1.764" lower="0" upper="1.5707963267948966" velocity="0.308"/> -->
+    <limit effort="1.764" lower="0" upper="0.907963267948966" velocity="0.308"/>
   </joint>
   <link name="R_index_pip">
     <visual>
@@ -270,8 +267,7 @@
     <child link="R_index_dip"/>
     <axis xyz="0 1 0"/>
     <limit effort="1.764" lower="0" upper="1.8325957145940461" velocity="0.308"/>
-    <!-- <mimic joint="R_index_pip_joint" multiplier="1.097" offset="0"/> -->
-    <mimic joint="R_index_pip_joint" multiplier="0.3" offset="0"/>
+    <mimic joint="R_index_pip_joint" multiplier="1.097" offset="0"/>
   </joint>
   <link name="R_index_dip">
     <visual>
@@ -333,7 +329,8 @@
     <parent link="R_middle_abad"/>
     <child link="R_middle_pip"/>
     <axis xyz="0 1 0"/>
-    <limit effort="1.764" lower="0" upper="1.5707963267948966" velocity="0.308"/>
+    <!-- <limit effort="1.764" lower="0" upper="1.5707963267948966" velocity="0.308"/> -->
+    <limit effort="1.764" lower="0" upper="1.2707963267948966" velocity="0.308"/>
   </joint>
   <link name="R_middle_pip">
     <visual>
@@ -361,8 +358,7 @@
     <child link="R_middle_dip"/>
     <axis xyz="0 1 0"/>
     <limit effort="1.764" lower="0" upper="1.8325957145940461" velocity="0.308"/>
-    <mimic joint="R_middle_pip_joint" multiplier="0.3" offset="0"/>
-    <!-- <mimic joint="R_middle_pip_joint" multiplier="1.097" offset="0"/> -->
+    <mimic joint="R_middle_pip_joint" multiplier="1.097" offset="0"/>
   </joint>
   <link name="R_middle_dip">
     <visual>
@@ -426,7 +422,8 @@
     <parent link="R_ring_abad"/>
     <child link="R_ring_pip"/>
     <axis xyz="0 1 0"/>
-    <limit effort="1.764" lower="0" upper="1.5707963267948966" velocity="0.308"/>
+    <!-- <limit effort="1.764" lower="0" upper="1.5707963267948966" velocity="0.308"/> -->
+    <limit effort="1.764" lower="0" upper="1.3707963267948966" velocity="0.308"/>
   </joint>
   <link name="R_ring_pip">
     <visual>
@@ -454,8 +451,7 @@
     <child link="R_ring_dip"/>
     <axis xyz="0 1 0"/>
     <limit effort="1.764" lower="0" upper="1.8325957145940461" velocity="0.308"/>
-    <mimic joint="R_ring_pip_joint" multiplier="0.3" offset="0"/>
-    <!-- <mimic joint="R_ring_pip_joint" multiplier="1.097" offset="0"/> -->
+    <mimic joint="R_ring_pip_joint" multiplier="1.097" offset="0"/>
   </joint>
   <link name="R_ring_dip">
     <visual>
@@ -512,8 +508,6 @@
       <inertia ixx="6.74e-06" ixy="0.0" ixz="-3.3e-07" iyy="7.81e-06" iyz="0.0" izz="2.37e-06"/>
     </inertial>
   </link>
-  
-        y 
   <joint name="R_pinky_pip_joint" type="revolute">
     <origin rpy="0 0 0" xyz="0.001025 0 0.017575"/>
     <parent link="R_pinky_abad"/>
@@ -547,8 +541,7 @@
     <child link="R_pinky_dip"/>
     <axis xyz="0 1 0"/>
     <limit effort="1.764" lower="0" upper="1.8325957145940461" velocity="0.308"/>
-    <!-- <mimic joint="R_pinky_pip_joint" multiplier="1.097" offset="0"/> -->
-    <mimic joint="R_pinky_pip_joint" multiplier="0.3" offset="0"/>
+    <mimic joint="R_pinky_pip_joint" multiplier="1.097" offset="0"/>
   </joint>
   <link name="R_pinky_dip">
     <visual>

@@ -154,9 +154,14 @@
       link="thumb_metacarpals_base2" />
     <axis
       xyz="0 0 -1" />
-    <limit
+    <!-- <limit
       lower="0"
       upper="1.3868"
+      effort="100"
+      velocity="1" /> -->
+    <limit
+      lower="0"
+      upper="0.3"
       effort="100"
       velocity="1" />
   </joint>
@@ -270,16 +275,16 @@
       link="thumb_proximal" />
     <axis
       xyz="0 1 0" />
-    <!-- <limit
+    <limit
       lower="0"
       upper="1.2908"
       effort="100"
-      velocity="1" /> -->
-    <limit
+      velocity="1" />
+    <!-- <limit
       lower="0"
       upper="0.2908"
       effort="100"
-      velocity="1" />
+      velocity="1" /> -->
   </joint>
   <link
     name="thumb_distal">
@@ -333,16 +338,16 @@
       link="thumb_distal" />
     <axis
       xyz="0 1 0" />
-    <!-- <limit
+    <limit
       lower="0"
       upper="1.3781"
       effort="100"
-      velocity="1" /> -->
-    <limit
+      velocity="1" />
+    <!-- <limit
       lower="0"
       upper="0.3781"
       effort="100"
-      velocity="1" />
+      velocity="1" /> -->
   </joint>
   <link
     name="thumb_Virtual_Point">
